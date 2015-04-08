@@ -22,7 +22,7 @@ $(document).ready(function(){
 	var vyl_back = $("#vyl-back");
 	var vyl_link = $(".vyl-link");
 	
-	var vyl_data_item = Array();
+	var vyl_data_item = new Array();
 	$(".vyl-item").each(function(index, value){
 		vyl_data_item.push($(this).attr("href"));
 	});
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		
 		/* Show the lightbox */
 		vyl_link.on("click", function(e){
-			vyl_position_history = $(this).offset().top;
+			vyl_position_history = $(window).scrollTop();
 			vyl_box.attr('active', 'true');
 			vyl_width();
 			vyl_height();
@@ -88,7 +88,10 @@ $(document).ready(function(){
 			vyl_goToLightBox();
 			vyl_back.fadeIn(1000);
 			vyl_box.fadeIn(1000);
-			$(".vyl-arrow-left, .vyl-arrow-right").fadeIn(1000);
+			if (vyl_data_item.length > 1)
+			{
+				$(".vyl-arrow-left, .vyl-arrow-right").fadeIn(1000);
+			}
 			vyl_iframe.attr('src', $(this).attr('href'));
 			vyl_item = vyl_data_item.indexOf($(this).attr('href'));
 			e.preventDefault();

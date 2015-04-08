@@ -33,7 +33,7 @@ img.vyl-arrow-left, img.vyl-arrow-right{
 	width: 100%;
 	max-width: 60px;
 	display: none;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 img.vyl-arrow-left:hover{
@@ -44,6 +44,11 @@ img.vyl-arrow-left:hover{
 img.vyl-arrow-right:hover{
 	cursor: pointer;
 	opacity: 1;
+}
+
+button.vyp-submit:hover
+{
+	cursor: pointer;
 }
 
 #vyl-box{

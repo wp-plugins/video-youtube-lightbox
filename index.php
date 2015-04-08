@@ -3,8 +3,8 @@
 /*
 Plugin Name: Video Youtube Lightbox
 Plugin URI: https://wordpress.org/plugins/video-youtube-lightbox/
-Description: Video Youtube Lightbox Widget. You can add your favorites Youtube videos in a playlist from the admin panel widgets and display it in a responsive lightbox with a single click.
-Version: 1.1
+Description: Video Youtube Lightbox Widget. You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
+Version: 1.2
 Author: Manuel J. Dávila González
 Author URI: https://profiles.wordpress.org/manudg/
 License: GPL2
@@ -250,7 +250,7 @@ class Video_Youtube_Lightbox extends WP_Widget {
 				?>
 				<form method="post">
 					<input type="hidden" name="vyp_delete" value="<?php echo $row->id ?>" />
-					<button type="submit" title="Delete Video: <?php echo $row->youtubetitle ?>"><span class="dashicons dashicons-trash"></span></button>
+					<button type="submit" class="vyp-submit" title="Delete Video: <?php echo $row->youtubetitle ?>"><span class="dashicons dashicons-trash"></span></button>
 				</form>
 				<?php
 			} 

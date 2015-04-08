@@ -6,19 +6,19 @@ Tested up to: 4.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You can add your favorites Youtube videos in a playlist from the admin panel widgets and display it in a responsive lightbox with a single click.
+You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
 
 == Description ==
 
-You can add your favorites Youtube videos in a playlist from the admin panel widgets and display it in a responsive lightbox with a single click.
+You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
 
 Major features in Video Youtube Lightbox include:
 
-* Add to playlist many youtube videos as you want, just need the title and url of the video.
+* Add youtube videos to the playlist, just need you the title and url of the video.
 * Delete video option in the widget.
 * Limits the number of videos to display in the widget.
 * Play the video in a responsive lightbox.
-* Arrows back and forward navigation in the lightbox.
+* Back and forward navigation arrows in the lightbox.
 
 == Installation ==
 
@@ -45,5 +45,11 @@ Upload the video-youtube-lightbox.zip file to your blog, Activate it.
 *Release Date - 09th April, 2015*
 
 * When closing the lightbox return the user to their previous position on the page
-* Add arrows back and forward navigation in the lightbox
+* Add back and forward navigation arrows in the lightbox
+
+= 1.2 =
+*Release Date - 09th April, 2015*
+
+* Not show the navigation arrows if exist only one video
+* Adding pointer cursor to the delete button
 
