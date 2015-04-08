@@ -233,8 +233,8 @@ class Video_Youtube_Lightbox extends WP_Widget {
 		foreach($rows as $row):
 		?>
 			<p>
-			 <a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link" style="float: left; margin: 5px; width: 45%;" title="<?php echo $row->youtubetitle ?>"><img class="video-youtube-playlist-img" src="<?php echo $row->youtubeimage ?>" alt="<?php echo $row->youtubetitle ?>" /></a>
-			<a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link" title="<?php echo $row->youtubetitle ?>"><small><?php echo $row->youtubetitle ?></small></a>
+			 <a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link" title="<?php echo $row->youtubetitle ?>"><img class="video-youtube-playlist-img" src="<?php echo $row->youtubeimage ?>" alt="<?php echo $row->youtubetitle ?>" /></a>
+			<a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link"  title="<?php echo $row->youtubetitle ?>"><small><?php echo $row->youtubetitle ?></small></a>
 			</p>
 			<div style="clear: both;"></div>
 			<?php 
@@ -244,7 +244,7 @@ class Video_Youtube_Lightbox extends WP_Widget {
 				?>
 				<form method="post">
 					<input type="hidden" name="vyp_delete" value="<?php echo $row->id ?>" />
-					<button type="submit" title="Delete Video"><span class="dashicons dashicons-trash"></span></button>
+					<button type="submit" title="Delete Video: <?php echo $row->youtubetitle ?>"><span class="dashicons dashicons-trash"></span></button>
 				</form>
 				<?php
 			} 

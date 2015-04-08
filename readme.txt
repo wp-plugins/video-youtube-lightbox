@@ -34,3 +34,8 @@ Upload the video-youtube-lightbox.zip file to your blog, Activate it.
 *Release Date - 04th April, 2015*
 
 * Previous version
+
+= 1.0.1 =
+*Release Date - 08th April, 2015*
+
+* Modification of some styles css, adding margin and max width to the image
