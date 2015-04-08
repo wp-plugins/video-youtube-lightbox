@@ -26,8 +26,8 @@ Upload the video-youtube-lightbox.zip file to your blog, Activate it.
 
 == Screenshots ==
 
-1. Playlist
-2. Lightbox
+1. Lightbox
+2. Playlist
 
 == Changelog ==
 
