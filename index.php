@@ -4,7 +4,7 @@
 Plugin Name: Video Youtube Lightbox
 Plugin URI: https://wordpress.org/plugins/video-youtube-lightbox/
 Description: Video Youtube Lightbox Widget. You can add your favorites Youtube videos in a playlist from the admin panel widgets and display it in a responsive lightbox with a single click.
-Version: 1.0.1
+Version: 1.1
 Author: Manuel J. Dávila González
 Author URI: https://profiles.wordpress.org/manudg/
 License: GPL2
@@ -221,20 +221,26 @@ class Video_Youtube_Lightbox extends WP_Widget {
 	   if ($title) {
 		  echo $before_title . $title . $after_title;
 	   }
-		
 	?>		
 
-	<div id="video-youtube-lightbox-back"></div>
-	<div id="video-youtube-lightbox-box">
-	<iframe id="video-youtube-lightbox-iframe" src="" frameborder="0" allowfullscreen></iframe>
+
+	<div id="vyl-back"></div>
+	<?php 
+	$arrow_left = plugins_url( 'images/left.png', __FILE__ );
+	$arrow_right = plugins_url( 'images/right.png', __FILE__ );
+	?>
+	<img src="<?php echo $arrow_left ?>" class="vyl-arrow-left" />
+	<img src="<?php echo $arrow_right ?>" class="vyl-arrow-right" />
+	<div id="vyl-box">
+	<iframe id="vyl-iframe" src="" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
 		<?php
 		foreach($rows as $row):
 		?>
 			<p>
-			 <a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link" title="<?php echo $row->youtubetitle ?>"><img class="video-youtube-playlist-img" src="<?php echo $row->youtubeimage ?>" alt="<?php echo $row->youtubetitle ?>" /></a>
-			<a href="<?php echo $row->youtubeurl ?>" class="video-youtube-lightbox-link"  title="<?php echo $row->youtubetitle ?>"><small><?php echo $row->youtubetitle ?></small></a>
+			 <a href="<?php echo $row->youtubeurl ?>" class="vyl-link vyl-item" title="<?php echo $row->youtubetitle ?>"><img class="vyl-img" src="<?php echo $row->youtubeimage ?>" alt="<?php echo $row->youtubetitle ?>" /></a>
+			<a href="<?php echo $row->youtubeurl ?>" class="vyl-link"  title="<?php echo $row->youtubetitle ?>"><small><?php echo $row->youtubetitle ?></small></a>
 			</p>
 			<div style="clear: both;"></div>
 			<?php 

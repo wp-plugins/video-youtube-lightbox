@@ -18,6 +18,7 @@ Major features in Video Youtube Lightbox include:
 * Delete video option in the widget.
 * Limits the number of videos to display in the widget.
 * Play the video in a responsive lightbox.
+* Arrows back and forward navigation in the lightbox.
 
 == Installation ==
 
@@ -38,4 +39,11 @@ Upload the video-youtube-lightbox.zip file to your blog, Activate it.
 = 1.0.1 =
 *Release Date - 08th April, 2015*
 
-* Modification of some styles css, adding margin and max width to the image
+* Modification of some css styles, adding margin and max width to the image
+
+= 1.1 =
+*Release Date - 09th April, 2015*
+
+* When closing the lightbox return the user to their previous position on the page
+* Add arrows back and forward navigation in the lightbox
+
