@@ -6,11 +6,11 @@ Tested up to: 4.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click. Compatible test from 4.1.7 to 4.2.4 Versions.
+You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
 
 == Description ==
 
-You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click. Compatible test from 4.1.7 to 4.2.4 Versions.
+You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
 
 Major features in Video Youtube Lightbox include:
 
