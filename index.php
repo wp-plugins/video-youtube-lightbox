@@ -4,7 +4,7 @@
 Plugin Name: Video Youtube Lightbox
 Plugin URI: https://wordpress.org/plugins/video-youtube-lightbox/
 Description: Video Youtube Lightbox Widget. You can add your favorites Youtube videos in a playlist and display it in a responsive lightbox with a single click.
-Version: 1.2
+Version: 1.2.1
 Author: Manuel J. Dávila González
 Author URI: https://profiles.wordpress.org/manudg/
 License: GPL2
